@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     borderRadius: 100,
   },
   headerContainer: {
-    flex: 0.15,
+    flex: 0.18,
     // paddingVertical: 10,
     backgroundColor: "#161616",
     // backgroundColor: "white",
