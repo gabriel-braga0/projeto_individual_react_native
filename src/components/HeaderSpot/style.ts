@@ -7,17 +7,20 @@ export const styles = StyleSheet.create({
     borderRadius: 100,
   },
   headerContainer: {
-    flex: 0.18,
-    // paddingVertical: 10,
+    flex: 0.3,
+    position: "absolute", // Fixa o header no topo
+    top: 0,
+    left: 0,
+    right: 0,
+    height: "15%", // Defina uma altura adequada
     backgroundColor: "#161616",
-    // backgroundColor: "white",
-    // marginTop: "10%",
     flexDirection: "row",
     paddingHorizontal: 20,
     justifyContent: "center",
     alignItems: "flex-end",
     gap: 10,
     paddingBottom: 20,
+    zIndex: 1,
   },
   button: {
     alignItems: "center",

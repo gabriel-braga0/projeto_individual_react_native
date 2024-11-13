@@ -23,6 +23,7 @@ export const styles = StyleSheet.create({
     width: "100%",
   },
   cardContainer: {
+    paddingTop: 20,
     alignItems: "center",
     justifyContent: "center",
     width: "100%",

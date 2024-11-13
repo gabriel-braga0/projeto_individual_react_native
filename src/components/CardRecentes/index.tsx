@@ -22,7 +22,7 @@ const CardRecentes = () => {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <View style={styles.card}>
-            <TouchableOpacity style={styles.cardButton}>
+            <TouchableOpacity activeOpacity={0.5} style={styles.cardButton}>
               <Image style={styles.image} source={item.img} />
               <Text style={styles.cardText}>{item.name}</Text>
             </TouchableOpacity>
