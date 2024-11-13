@@ -10,29 +10,30 @@ import {
 import AvatarImage from "./../../../assets/Ashes_6_post.jpg";
 
 import React from "react";
+import { styles } from "./style";
 
 const HeaderSpot = () => {
-  const storiesData = [
+  const headerData = [
     { id: "1", name: "Tudo" },
     { id: "2", name: "Música" },
     { id: "3", name: "Podcasts" },
   ];
   return (
-    <View style={styles.storiesContainer}>
+    <View style={styles.headerContainer}>
       <Image
         style={styles.avatarImage}
         source={AvatarImage}
         alt="Avatar de perfil"
       />
       <FlatList
-        data={storiesData}
+        data={headerData}
         horizontal
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           // <View style={styles.button}>
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.storyText}>{item.name}</Text>
+            <Text style={styles.headerText}>{item.name}</Text>
           </TouchableOpacity>
         )}
       />
@@ -41,37 +42,3 @@ const HeaderSpot = () => {
 };
 
 export default HeaderSpot;
-
-const styles = StyleSheet.create({
-  avatarImage: {
-    width: 40,
-    height: 40,
-    borderRadius: 100,
-  },
-  storiesContainer: {
-    // paddingVertical: 10,
-    backgroundColor: "#161616",
-    // backgroundColor: "white",
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  button: {
-    alignItems: "center",
-    marginHorizontal: 10,
-    backgroundColor: "#1cd464",
-    height: "100%",
-    borderRadius: 50,
-    padding: 8,
-  },
-
-  storyText: {
-    color: "black",
-    // marginTop: 5,
-    fontSize: 12,
-    textAlign: "center",
-    paddingHorizontal: 10,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
