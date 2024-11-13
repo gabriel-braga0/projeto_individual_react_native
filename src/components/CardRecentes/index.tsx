@@ -4,14 +4,14 @@ import { styles } from "./style";
 
 const CardRecentes = () => {
   const dataPlaylists = [
-    { id: "1", name: "play1", img: xic },
-    { id: "2", name: "play2", img: xic },
-    { id: "3", name: "play3", img: xic },
-    { id: "4", name: "play4", img: xic },
-    { id: "5", name: "play4", img: xic },
-    { id: "6", name: "play4", img: xic },
-    { id: "7", name: "play4", img: xic },
-    { id: "8", name: "play4", img: xic },
+    { id: 1, name: "play1", img: xic },
+    { id: 2, name: "play2", img: xic },
+    { id: 3, name: "play3", img: xic },
+    { id: 4, name: "play4", img: xic },
+    { id: 5, name: "play4", img: xic },
+    { id: 6, name: "play4", img: xic },
+    { id: 7, name: "play4", img: xic },
+    { id: 8, name: "play4", img: xic },
   ];
   return (
     <View style={styles.cardContainer}>
@@ -19,7 +19,7 @@ const CardRecentes = () => {
         data={dataPlaylists}
         scrollEnabled={false}
         showsHorizontalScrollIndicator={false}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
           <View style={styles.card}>
             <TouchableOpacity activeOpacity={0.5} style={styles.cardButton}>

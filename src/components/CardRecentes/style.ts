@@ -12,14 +12,14 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 5,
     width: "48%",
-    marginRight: 5,
+    marginHorizontal: 3,
     marginTop: 5,
     backgroundColor: "#302e2e",
   },
   cardButton: {
     flexDirection: "row",
     alignItems: "center",
-    gap: 5,
+    gap: 10,
     width: "100%",
   },
   cardContainer: {
