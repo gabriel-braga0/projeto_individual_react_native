@@ -50,4 +50,9 @@ export const styles = StyleSheet.create({
     color: "white",
     textAlign: "left",
   },
+  textLeft: {
+    borderLeftColor: "red",
+    borderLeftWidth: 5,
+    paddingLeft: 5,
+  },
 });

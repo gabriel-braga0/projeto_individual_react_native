@@ -24,7 +24,11 @@ export const SquareCard = ({ img, name, text, playlist }: cardData) => {
           {playlist ? (
             <FontAwesome name={"spotify"} size={18} color="white" />
           ) : null}
-          {playlist ? <Text style={styles.cardName}>{name}</Text> : null}
+          {playlist ? (
+            <View style={styles.textLeft}>
+              <Text style={styles.cardName}>{name}</Text>
+            </View>
+          ) : null}
         </ImageBackground>
       </View>
       <Text
