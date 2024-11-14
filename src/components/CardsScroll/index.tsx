@@ -16,6 +16,7 @@ interface PropsApi {
   text?: string;
   img: ImageSourcePropType;
   playlist?: boolean;
+  color?: string;
 }
 
 interface ArrayPropsApi {
@@ -40,6 +41,7 @@ export const CardsScroll = ({ data, title }: ArrayPropsApi) => {
               img={item.img}
               name={item.name}
               text={item.text}
+              color={item.color}
             />
           )}
         />

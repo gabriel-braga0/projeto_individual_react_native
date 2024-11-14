@@ -3,12 +3,20 @@ import xic from "../../assets/Ashes_6_post.jpg";
 export const data = [
   {
     id: 1,
-    name: "teste1",
-    text: "Twenty One Pilots, Nessa Barret, ili e mais",
+    name: "CAPS",
+    text: "Teteu, Canella, Alemã e best da python",
     img: xic,
     playlist: true,
+    color: "red",
   },
-  { id: 2, name: "teste", text: "play2", img: xic, playlist: true },
+  {
+    id: 2,
+    name: "teste",
+    text: "play2",
+    img: xic,
+    playlist: true,
+    color: "green",
+  },
   { id: 3, name: "teste", text: "play3", img: xic, playlist: true },
   { id: 4, name: "teste", text: "play4", img: xic, playlist: true },
   { id: 5, name: "teste", text: "play4", img: xic, playlist: true },

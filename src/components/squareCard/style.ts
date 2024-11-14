@@ -20,15 +20,19 @@ export const styles = StyleSheet.create({
     marginRight: 10,
     alignItems: "center",
   },
+  imgContainerBorder: {
+    width: 150,
+    height: 150,
+    borderBottomWidth: 5,
+    backgroundColor: "#333333",
+  },
   imgContainer: {
     width: 150,
-    height: 145,
-    borderBottomWidth: 5, // Borda apenas na parte inferior
-    borderColor: "red", // Cor da borda inferior
-    backgroundColor: "blue", // Cor de fundo do container
+    height: 150,
+    backgroundColor: "#333333",
   },
   img: {
-    flex: 1, // Ocupa o tamanho total do container
+    flex: 1,
     padding: 5,
     justifyContent: "space-between",
   },
@@ -44,14 +48,13 @@ export const styles = StyleSheet.create({
     padding: 5,
   },
   cardName: {
-    borderLeftColor: "red",
     fontSize: 20,
     fontWeight: "bold",
     color: "white",
     textAlign: "left",
   },
   textLeft: {
-    borderLeftColor: "red",
+    borderLeftColor: "transparent",
     borderLeftWidth: 5,
     paddingLeft: 5,
   },
