@@ -13,7 +13,7 @@ import { SquareCard } from "../squareCard";
 interface PropsApi {
   id: number;
   name: string;
-  text: string;
+  text?: string;
   img: ImageSourcePropType;
   playlist?: boolean;
 }

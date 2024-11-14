@@ -24,7 +24,7 @@ const ButtonComp = ({
       style={[
         styles.button,
         {
-          backgroundColor: bgColor ? bgColor : "#161616",
+          backgroundColor: bgColor ? bgColor : "#121212",
           borderColor: borderColor ? borderColor : "white",
         },
       ]}

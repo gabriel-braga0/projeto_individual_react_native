@@ -11,10 +11,10 @@ export const styles = StyleSheet.create({
     justifyContent: "flex-end",
     alignItems: "center",
     borderRadius: 5,
-    width: "48%",
-    marginHorizontal: 3,
-    marginTop: 5,
-    backgroundColor: "#302e2e",
+    width: "47%",
+    marginHorizontal: 6,
+    marginTop: 8,
+    backgroundColor: "#333333",
   },
   cardButton: {
     flexDirection: "row",
@@ -27,10 +27,12 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
   },
   cardText: {
     color: "white",
+    fontSize: 12,
     fontWeight: "bold",
+    width: "60%",
   },
 });

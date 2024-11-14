@@ -18,6 +18,7 @@ const Home = () => {
           <CardsScroll title="Suas músicas estão com saudade" data={data} />
           <CardsScroll title="Artistas recentes" data={data2} />
           <CardsScroll title="Playlists recentes" data={data} />
+          <View style={styles.space}></View>
         </ScrollView>
 
         <FooterSpot />

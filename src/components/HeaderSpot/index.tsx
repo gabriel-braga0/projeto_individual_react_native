@@ -1,14 +1,45 @@
 import { View, Text, FlatList, Image, TouchableOpacity } from "react-native";
 import AvatarImage from "./../../../assets/Ashes_6_post.jpg";
 
-import React from "react";
+import React, { useState } from "react";
 import { styles } from "./style";
 
 const HeaderSpot = () => {
+  const [active1, setActive1] = useState(true);
+  const [active2, setActive2] = useState(false);
+  const [active3, setActive3] = useState(false);
+
   const headerData = [
-    { id: "1", name: "Tudo" },
-    { id: "2", name: "Música" },
-    { id: "3", name: "Podcasts" },
+    {
+      id: "1",
+      name: "Tudo",
+      active: active1,
+      function() {
+        setActive1(true);
+        setActive2(false);
+        setActive3(false);
+      },
+    },
+    {
+      id: "2",
+      name: "Música",
+      active: active2,
+      function() {
+        setActive1(false);
+        setActive2(true);
+        setActive3(false);
+      },
+    },
+    {
+      id: "3",
+      name: "Podcasts",
+      active: active3,
+      function() {
+        setActive1(false);
+        setActive2(false);
+        setActive3(true);
+      },
+    },
   ];
   return (
     <View style={styles.headerContainer}>
@@ -23,9 +54,15 @@ const HeaderSpot = () => {
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          // <View style={styles.button}>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.headerText}>{item.name}</Text>
+          <TouchableOpacity
+            onPress={() => item.function()}
+            style={!item.active ? styles.button : styles.activeButton}
+          >
+            <Text
+              style={!item.active ? styles.headerText : styles.headerTextActive}
+            >
+              {item.name}
+            </Text>
           </TouchableOpacity>
         )}
       />

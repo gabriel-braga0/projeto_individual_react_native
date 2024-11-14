@@ -1,4 +1,4 @@
-import { TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import {
   FontAwesome,
   Foundation,
@@ -10,16 +10,21 @@ export const FooterSpot = () => {
   return (
     <View style={styles.footer}>
       <View style={styles.footerContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.button}>
           <Foundation name="home" size={30} color="#fff" />
+          <Text style={styles.buttonTextActive}>Inicio</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <FontAwesome name="search" size={30} color="#fff" />
+        <TouchableOpacity style={styles.button}>
+          <FontAwesome name="search" size={30} color="gray" />
+          <Text style={styles.buttonText}>Buscar</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <MaterialCommunityIcons name="bookshelf" size={30} color="#fff" />
+        <TouchableOpacity style={styles.button}>
+          <MaterialCommunityIcons name="bookshelf" size={30} color="gray" />
+          <Text numberOfLines={1} style={[styles.buttonText, { width: 40 }]}>
+            Biblioteca
+          </Text>
         </TouchableOpacity>
       </View>
     </View>

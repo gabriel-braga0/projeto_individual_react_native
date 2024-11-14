@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   cardText: {
     fontSize: 12,
     fontWeight: "light",
-    color: "#888888",
+    color: "#a4a4a4",
     marginTop: 1,
     width: 150,
   },

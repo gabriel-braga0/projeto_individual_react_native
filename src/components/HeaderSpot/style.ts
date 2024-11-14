@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: "15%", // Defina uma altura adequada
-    backgroundColor: "#161616",
+    backgroundColor: "#121212",
     flexDirection: "row",
     paddingHorizontal: 20,
     justifyContent: "center",
@@ -26,13 +26,31 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginHorizontal: 5,
+    backgroundColor: "#333333",
+    height: 40,
+    borderRadius: 50,
+    padding: 8,
+  },
+  headerText: {
+    color: "white",
+    fontSize: 12,
+    textAlign: "center",
+    paddingHorizontal: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  activeButton: {
+    alignItems: "center",
+    justifyContent: "center",
+    marginHorizontal: 5,
     backgroundColor: "#1cd464",
     height: 40,
     borderRadius: 50,
     padding: 8,
   },
 
-  headerText: {
+  headerTextActive: {
     color: "black",
     fontSize: 12,
     textAlign: "center",

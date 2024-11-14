@@ -1,4 +1,4 @@
-import xic from "../../assets/xic.jpeg";
+import xic from "../../assets/Ashes_6_post.jpg";
 
 export const data = [
   {
@@ -25,12 +25,12 @@ export const data2 = [
     text: "Artista",
     img: xic,
   },
-  { id: 2, name: "teste", text: "Artista", img: xic, playlist: false },
-  { id: 3, name: "teste", text: "Artista", img: xic, playlist: false },
-  { id: 4, name: "teste", text: "Artista", img: xic, playlist: false },
-  { id: 5, name: "teste", text: "Artista", img: xic, playlist: false },
-  { id: 6, name: "teste", text: "Artista", img: xic, playlist: false },
-  { id: 7, name: "teste", text: "Artista", img: xic, playlist: false },
-  { id: 8, name: "teste", text: "Artista", img: xic, playlist: false },
-  { id: 9, name: "teste", text: "Artista", img: xic, playlist: false },
+  { id: 2, name: "Artista", img: xic },
+  { id: 3, name: "Artista", img: xic },
+  { id: 4, name: "Artista", img: xic },
+  { id: 5, name: "Artista", img: xic },
+  { id: 6, name: "Artista", img: xic },
+  { id: 7, name: "Artista", img: xic },
+  { id: 8, name: "Artista", img: xic },
+  { id: 9, name: "Artista", img: xic },
 ];

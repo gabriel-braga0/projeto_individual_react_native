@@ -11,7 +11,7 @@ import { FontAwesome } from "@expo/vector-icons";
 interface cardData {
   img: ImageSourcePropType;
   name: string;
-  text: string;
+  text?: string;
   playlist?: boolean;
 }
 
@@ -33,7 +33,7 @@ export const SquareCard = ({ img, name, text, playlist }: cardData) => {
         numberOfLines={2}
         style={playlist ? styles.cardText : styles.artistText}
       >
-        {text}
+        {playlist ? text : name}
       </Text>
     </TouchableOpacity>
   );
