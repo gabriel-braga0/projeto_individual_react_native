@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: "light",
     color: "#a4a4a4",
-    marginTop: 1,
+    marginTop: 10,
     width: 150,
   },
   artistText: {
@@ -20,21 +20,32 @@ export const styles = StyleSheet.create({
     marginRight: 10,
     alignItems: "center",
   },
-  img: {
+  imgContainer: {
     width: 150,
-    height: 150,
+    height: 145,
+    borderBottomWidth: 5, // Borda apenas na parte inferior
+    borderColor: "red", // Cor da borda inferior
+    backgroundColor: "blue", // Cor de fundo do container
+  },
+  img: {
+    flex: 1, // Ocupa o tamanho total do container
     padding: 5,
     justifyContent: "space-between",
   },
-  artistImg: {
+  artistImgContainer: {
     width: 150,
     height: 150,
     borderRadius: 75,
     overflow: "hidden",
+  },
+  artistImg: {
+    width: 150,
+    height: 150,
     padding: 5,
   },
   cardName: {
-    fontSize: 22,
+    borderLeftColor: "red",
+    fontSize: 20,
     fontWeight: "bold",
     color: "white",
     textAlign: "left",
