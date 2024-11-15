@@ -1,23 +1,35 @@
 import xic from "../../assets/Ashes_6_post.jpg";
+import lauren from "../../assets/laurenSpencerSmith.png";
+import oliviaRodrigo from "../../assets/oliviarodrigo.jpeg";
+import gracie from "../../assets/gracie.png";
+import kailee from "../../assets/kaileemorgue.png";
+import aviva from "../../assets/aviva.png";
 
-export const data = [
+export const dataMixes = [
   {
     id: 1,
-    name: "CAPS",
-    text: "Teteu, Canella, Alemã e best da python",
-    img: xic,
+    name: "Mix melancólico",
+    text: "Lauren Spencer Smith, Mckenna Grace, Lana Del Rey",
+    img: lauren,
     playlist: true,
-    color: "red",
+    color: "aquamarine",
   },
   {
     id: 2,
-    name: "teste",
-    text: "play2",
-    img: xic,
+    name: "Mix animado",
+    text: "Olivia Rodrigo, NERIAH, Chelsea Cutler",
+    img: oliviaRodrigo,
     playlist: true,
-    color: "green",
+    color: "lightpink",
   },
-  { id: 3, name: "teste", text: "play3", img: xic, playlist: true },
+  {
+    id: 3,
+    name: "Alt Z Mix",
+    text: "Gracie Abrams, shy martin, Gaustad",
+    img: gracie,
+    playlist: true,
+    color: "mediumorchid",
+  },
   { id: 4, name: "teste", text: "play4", img: xic, playlist: true },
   { id: 5, name: "teste", text: "play4", img: xic, playlist: true },
   { id: 6, name: "teste", text: "play4", img: xic, playlist: true },
@@ -26,14 +38,13 @@ export const data = [
   { id: 9, name: "teste", text: "play4", img: xic, playlist: true },
 ];
 
-export const data2 = [
+export const dataArtist = [
   {
     id: 1,
-    name: "teste1",
-    text: "Artista",
-    img: xic,
+    name: "Kailee Morgue",
+    img: kailee,
   },
-  { id: 2, name: "Artista", img: xic },
+  { id: 2, name: "AViVA", img: aviva },
   { id: 3, name: "Artista", img: xic },
   { id: 4, name: "Artista", img: xic },
   { id: 5, name: "Artista", img: xic },

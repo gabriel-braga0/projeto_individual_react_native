@@ -8,11 +8,11 @@ export const styles = StyleSheet.create({
   },
   headerContainer: {
     flex: 0.3,
-    position: "absolute", // Fixa o header no topo
+    position: "absolute",
     top: 0,
     left: 0,
     right: 0,
-    height: "15%", // Defina uma altura adequada
+    height: "15%",
     backgroundColor: "#121212",
     flexDirection: "row",
     paddingHorizontal: 20,

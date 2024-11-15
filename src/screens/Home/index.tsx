@@ -4,7 +4,7 @@ import HeaderSpot from "../../components/HeaderSpot";
 import { styles } from "./style";
 import CardRecentes from "../../components/CardRecentes";
 import { CardsScroll } from "../../components/CardsScroll";
-import { data, data2 } from "../../Mock/CardsScroll";
+import { dataMixes, dataArtist } from "../../Mock/CardsScroll";
 import { FooterSpot } from "../../components/FooterSpot";
 
 const Home = () => {
@@ -15,9 +15,12 @@ const Home = () => {
 
         <ScrollView showsVerticalScrollIndicator={false}>
           <CardRecentes />
-          <CardsScroll title="Suas músicas estão com saudade" data={data} />
-          <CardsScroll title="Artistas recentes" data={data2} />
-          <CardsScroll title="Playlists recentes" data={data} />
+          <CardsScroll title="Seus mixes mais ouvidos" data={dataMixes} />
+          <CardsScroll title="Artistas recentes" data={dataArtist} />
+          <CardsScroll
+            title="Suas músicas estão com saudade"
+            data={dataMixes}
+          />
           <View style={styles.space}></View>
         </ScrollView>
 

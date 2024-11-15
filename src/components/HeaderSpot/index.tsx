@@ -1,5 +1,5 @@
 import { View, Text, FlatList, Image, TouchableOpacity } from "react-native";
-import AvatarImage from "./../../../assets/Ashes_6_post.jpg";
+import AvatarImage from "./../../../assets/yuumei1.jpg";
 
 import React, { useState } from "react";
 import { styles } from "./style";
@@ -43,11 +43,14 @@ const HeaderSpot = () => {
   ];
   return (
     <View style={styles.headerContainer}>
-      <Image
-        style={styles.avatarImage}
-        source={AvatarImage}
-        alt="Avatar de perfil"
-      />
+      <TouchableOpacity>
+        <Image
+          style={styles.avatarImage}
+          source={AvatarImage}
+          alt="Avatar de perfil"
+        />
+      </TouchableOpacity>
+
       <FlatList
         data={headerData}
         horizontal

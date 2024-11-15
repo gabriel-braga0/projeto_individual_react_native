@@ -48,7 +48,7 @@ export const styles = StyleSheet.create({
     padding: 5,
   },
   cardName: {
-    fontSize: 20,
+    fontSize: 14,
     fontWeight: "bold",
     color: "white",
     textAlign: "left",
